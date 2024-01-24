@@ -31,14 +31,14 @@ const string= "triangle";
 // Write your code here
 function findSide(type){
   switch(type){
-    case "triangle": 
+    case "Triangle": 
     return 3; 
     
-    case "square": 
+    case "Square": 
     return 4;
 
-    case "circle" :
-    return infinite;  
+    case "Circle" :
+    return Infinity;  
   }
 }
 
