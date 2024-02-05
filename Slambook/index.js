@@ -39,7 +39,7 @@ let nicknameValue= document.querySelector(`[name='nickname']`).value;
 let songForMeValue= document.querySelector(`[name='songForMe']`).value; 
 let shareOpinionValue= document.querySelector(`[name='shareOpinion']`).value;
 
-let slamEntry= {
+let formValues= {
     contactName: contactNameValue,
     relationship: relationshipValue,
     likeInMe: likeInMeValue,
@@ -66,7 +66,7 @@ if (inputValue.trim()===""){
     return;
 }
 });
-allSlamArray.push(slamEntry);
+allSlamArray.push(formValues);
 console.log(allSlamArray);
 // Write your code above this line
 }
