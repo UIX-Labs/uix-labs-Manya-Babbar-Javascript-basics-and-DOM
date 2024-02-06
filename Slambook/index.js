@@ -68,5 +68,43 @@ if (inputValue.trim()===""){
 });
 allSlamArray.push(formValues);
 console.log(allSlamArray);
+
+const slamBook= document.querySelector(".allSlams");
+slamBook.innerHTML=' ';
+allSlamArray.forEach(entry=>{
+const card=    `<div class="card">
+
+<p>My name in your contact is <span class="answer">${entry.contactName}</span></p>
+
+<p>Relationship between us is <span class="answer">${entry.relationship}</span></p>
+
+<p>Something you like in me is <span class="answer">${entry.likeInMe}</span></p>
+
+<p>Something you hate in me is <span class="answer">${entry.hateInMe}</span></p>
+
+<p>If I die what would be your reaction?</p>
+
+<p><span class="answer">${entry.deadReaction}</span></p>
+
+<p>What did you feel when you first saw me?</p>
+
+<p><span class="answer">${entry.firstImpression}</span></p>
+
+<p>A beautiful message for me?</p>
+
+<p><span class="answer">${entry.beautifulMessage}</span></p>
+
+<p>A nickname for me is <span class="answer">${entry.nickname}</span></p>
+
+<p>A song you want to dedicate to me is <span class="answer">${entry.songForMe}</span></p>
+
+<p>Can I share your opinion in my status?</p>
+
+<p><span class="answer">${entry.shareOpinion}</span></p>
+
+</div>`
+
+slamBook.innerHTML+= card;
+});
 // Write your code above this line
 }
